@@ -1,10 +1,21 @@
 package com.geekbrains.lesson1;
 
 public abstract class Animals {
-    String name;
-    String color;
-    int age;
+    public String name;
+    public String color;
+    public int age;
+    //int prep;
 
-    public abstract void swim();
-    public abstract void run();
+    public Animals(String name, String color, int age){
+        this.name = name;
+        this.color = color;
+        this.age = age;
+        //this.prep = prep;
+    }
+
+    public void swim(int prep){
+        System.out.println(name+" "+"не умеет плавать");
+    };
+
+    public abstract void run(int prep);
 }
