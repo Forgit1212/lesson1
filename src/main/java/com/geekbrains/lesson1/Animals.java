@@ -1,5 +1,7 @@
 package com.geekbrains.lesson1;
 
+import java.util.ArrayList;
+
 public abstract class Animals {
     public String name;
     public String color;
@@ -11,6 +13,10 @@ public abstract class Animals {
         this.color = color;
         this.age = age;
         //this.prep = prep;
+    }
+
+    public void add(Animals animals){
+        animals.add(animals);
     }
 
     public void swim(int prep){

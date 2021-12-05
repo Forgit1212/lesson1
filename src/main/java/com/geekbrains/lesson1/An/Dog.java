@@ -27,4 +27,9 @@ public class Dog extends Animals {
             System.out.println(name+" "+"не проплывет"+" "+swimPrep+ " м");
         }
     }
+
+    @Override
+    public String toString(){
+        return "Dog ["+name+"] ";
+    }
 }

@@ -26,9 +26,14 @@ public class Cat extends Animals {
     @Override
     public void run(int fprep) {
         if (fprep<=prep){
-            System.out.println("cat"+name+" "+"пробежал"+" "+prep+ " м");
+            System.out.println("cat"+name+" "+"пробежал"+" "+fprep+ " м");
         }else {
-            System.out.println("cat"+name+" "+"не пробежит"+" "+prep+ " м");
+            System.out.println("cat"+name+" "+"не пробежит"+" "+fprep+ " м");
         }
+    }
+
+    @Override
+    public String toString(){
+        return "Cat ["+name+"] ";
     }
 }
